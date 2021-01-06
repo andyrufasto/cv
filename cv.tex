@@ -1,21 +1,25 @@
-
 \documentclass[a4paper,10pt]{article}
 
 %--------------------------PACKAGES--------------------------------------------
 
-\usepackage{amsfonts}
-\usepackage{xunicode,xltxtra,url,parskip} 	
 \RequirePackage{color,graphicx}
-\usepackage[usenames,dvipsnames]{xcolor}
 \usepackage[big]{layaureo} 				
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{amsfonts}
+\usepackage{hyperref}
 \usepackage{supertabular} 		
 \usepackage{titlesec}				
+\usepackage{xunicode,xltxtra,url,parskip} 	
 
-\usepackage{hyperref}
+
+%----------------------------SETTINGS-------------------------------------------
+\defaultfontfeatures{Mapping=tex-text}
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+\hyphenation{im-pre-se}
+\newcommand{\icon}[1]{\includegraphics[height=0.5cm, width=0.5cm]{img/#1}}
+\newcommand{\tvspace}{\footnotesize{}\\\multicolumn{2}{c}{}}
 
-\defaultfontfeatures{Mapping=tex-text}
 \setmainfont[
 Path = font/,
 SmallCapsFont = Fontin-SmallCaps.otf,
@@ -24,14 +28,8 @@ ItalicFont = Fontin-Italic.otf
 ]
 {Fontin.otf}
 
-\newcommand{\icon}[1]{\includegraphics[height=0.5cm, width=0.5cm]{img/#1}}
-\newcommand{\tvspace}{\footnotesize{}\\\multicolumn{2}{c}{}}
-
-\hyphenation{im-pre-se}
-
 
 %--------------------BEGIN DOCUMENT--------------------------------------------
-
 \begin{document}
 
 \pagestyle{empty} % non-numbered pages
@@ -39,16 +37,14 @@ ItalicFont = Fontin-Italic.otf
 \font\fb=''[cmr10]'' %for use with \LaTeX command
 
 %--------------------TITLE-----------------------------------------------------
-
 \par{\centering
 		{\Huge ANDY RUFASTO\\ \centering{\includegraphics[width=3cm]{img/photo.jpg}
 	}\bigskip\par} }
 
 
 %--------------------SECTIONS--------------------------------------------------
-
 \hfill\begin{minipage}{0.5\linewidth}
-	(Última actualización Noviembre 2020)\\ 
+	(Última actualización Enero 2021)\\ 
 	Descarga este documento:\\
  	\href{https://www.andyrufasto.cf/cv.pdf}{https://www.andyrufasto.cf/cv.pdf}
 	\href{https://www.github.com/andyrufasto.cf/cv}{\LaTeX}
